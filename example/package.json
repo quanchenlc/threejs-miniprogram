@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "regenerator-runtime": "^0.13.9",
     "threejs-miniprogram": "0.0.3"
   }
 }
