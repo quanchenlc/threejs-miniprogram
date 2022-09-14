@@ -2406,7 +2406,8 @@ export function registerGLTFLoader(THREE) {
         return parser.getDependency('accessor', accessorIndex)
           .then(function (accessor) {
 
-            geometry.addAttribute(attributeName, accessor);
+            // geometry.addAttribute(attributeName, accessor);
+            geometry.setAttribute(attributeName, accessor);
 
           });
 

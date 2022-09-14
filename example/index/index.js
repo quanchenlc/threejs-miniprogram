@@ -14,7 +14,7 @@ Page({
   data: {},
   onLoad: function () {
 
-      // console.log(regeneratorRuntime)
+      console.log(regeneratorRuntime)
 
     wx.createSelectorQuery()
       .select('#webgl')
@@ -24,14 +24,16 @@ Page({
         this.canvas = canvas
         const THREE = createScopedThreejs(canvas)
           console.log('THREE.REVISION',THREE.REVISION)
-          // v 144 测试通过；
+        // console.log(THREE)
+        // console.log(THREE.FileLoader)
+        // v 144 测试通过；
         // renderSphere(canvas, THREE)
           // v 144 测试通过；
         // renderCube(canvas, THREE)
           // v 144 测试通过；
         // renderCubes(canvas, THREE)
+
         renderModel(canvas, THREE)
-          console.log(THREE)
       })
   },
   touchStart(e) {

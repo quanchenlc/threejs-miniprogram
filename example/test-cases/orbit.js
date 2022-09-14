@@ -157,7 +157,8 @@ const registerOrbit = (THREE) => {
 
 			// so camera.up is the orbit axis
 			var quat = new Quaternion().setFromUnitVectors(object.up, new Vector3(0, 1, 0));
-			var quatInverse = quat.clone().inverse();
+			console.log('quat:',quat,quat.clone());
+			var quatInverse = quat.clone().invert();
 
 			var lastPosition = new Vector3();
 			var lastQuaternion = new Quaternion();
