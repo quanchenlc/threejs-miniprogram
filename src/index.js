@@ -1,8 +1,5 @@
 import {atob as _atob} from 'abab';
 import _XMLHttpRequest from './XMLHttpRequest'
-import _Request from './Request';
-import {fetch as _fetch} from './fetch';
-import _Headers from './Headers'
 import copyProperties from './copyProperties'
 import EventTarget from "./EventTarget"
 
@@ -58,13 +55,6 @@ export function createScopedThreejs(canvas) {
 
   // eslint-disable-next-line
   const XMLHttpRequest = _XMLHttpRequest
-
-  // eslint-disable-next-line
-  const Request=_Request;
-  // eslint-disable-next-line
-  const fetch=_fetch;
-  // eslint-disable-next-line
-  const Headers=_Headers;
 
   const exports = {};
 
